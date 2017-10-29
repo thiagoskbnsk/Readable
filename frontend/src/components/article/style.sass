@@ -1,0 +1,114 @@
+.area-minified
+  width: 100%
+  @media(min-width: 768px)
+    max-width: 80%
+    margin: auto
+  @media(min-width: 992px)
+    max-width: 60%
+  .article
+    .article-header
+      border-bottom: 1px solid rgba(0,0,0,0.1)
+      margin: 0 0 30px
+      .article-author
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0 0 30px
+        .img-author
+          display: flex
+          align-items: center
+          margin: 0 15px 0 0
+          img
+            max-width: 50px
+            border-radius: 50%
+        .info-author
+          display: flex
+          align-items: center
+          flex-direction: column
+          justify-content: left
+          h3
+            margin: 0
+            font-size: 20px
+            width: 100%
+          p
+            margin: 0
+            font-size: 18px
+            color: #666
+    .article-body
+      position: relative
+      margin: 0 0 30px
+      padding: 0 0 30px
+      border-bottom: 1px solid rgba(0,0,0,0.1)
+      p
+        font-size: 18px
+        color: #555
+        &:last-child
+          margin: 0 0 8px
+      .article-options
+        display: flex
+        a
+          margin: 0 5px
+          color: #4db4f3
+          &:first-child
+            margin: 0 5px 0 0
+          &:hover
+            filter: drop-shadow(0 0 3px rgba(77,180,243,0.8))
+        @media(min-width: 767px)
+          position: absolute
+          left: -80px
+          padding: 0 10px
+          display: flex
+          flex-direction: column
+          a
+            margin: 0 0 5px
+            &:first-child
+              margin: 0 0 5px
+  .comments
+    height: 500px
+    .block-comments
+      margin: 0 0 15px
+      .comment
+        display: flex
+        padding: 15px 0
+        border-bottom: 1px solid rgba(0,0,0,0.05)
+        &:first-child
+          padding: 0 0 15px
+        &:last-child
+          border: none
+        .comment-img
+          display: flex
+          align-items: flex-start
+          justify-content: center
+          margin: 0 15px 0 0
+          img
+            max-width: 50px
+            border-radius: 50%
+        .comment-opinion
+          display: flex
+          align-items: flex-start
+          justify-content: left
+          flex-direction: column
+          width: 100%
+          .comment-header
+            display: flex
+            justify-content: space-between
+            width: 100%
+            .comment-options
+              a
+                color: rgba(0,0,0,0.6)
+                &:hover
+                  color: #4db4f3
+          p
+            margin: 0
+            &.comment-author
+                font-weight: bold
+            .comment-info
+              margin: 5px 0 0
+              color: #777
+          small
+            margin: 5px 0 0
+            a
+              text-decoration: none
+              color: #207fb9
+              &:hover
+                color: #009eff

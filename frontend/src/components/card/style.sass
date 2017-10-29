@@ -1,0 +1,72 @@
+.card
+  margin-top: 50px
+  border-radius: 3px
+  border: 1px solid rgba(0,0,0,0.1)
+  width: 100%
+  display: inline-block
+  box-shadow: 0 0 10px rgba(0,0,0,0.2)
+  @media(min-width: 576px)
+    width: 350px
+  .card-header
+    text-align: center
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    position: relative
+    height: 230px
+    overflow: hidden
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    &.ocean
+      background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
+    &.sunshine
+      background: linear-gradient(141deg, #ffed1a 0%, #ffaa2a 51%, #fd6900 75%)
+    &.dusk
+      background: linear-gradient(141deg, #e260ea 0%, #7b2ae6 51%, #403eb7 75%)
+    img
+      max-height: 400px
+      filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4))
+  .card-body
+    padding: 30px 15px
+    text-align: center
+    background: #f9f9f9
+    .title-body
+      margin: 0
+    .intro-body
+      color: #666
+      font-size: 20px
+      font-weight: 300
+    .link-hover
+      position: relative
+      font-size: 18px
+      font-weight: 300
+      a
+        text-decoration: none
+        color: #2cb5e8
+        &+.icon
+          opacity: 0
+          position: absolute
+          right: -12px
+          top: 3px
+          transition: all 0.2s ease-in-out
+        &:hover
+          text-decoration: underline
+          &+.icon
+            opacity: 1
+            right: -20px
+
+  .card-footer
+    display: flex
+    border-top: 1px solid rgba(0,0,0,0.1)
+    .info-footer
+      width: 33.33333333333333%
+      text-align: center
+      padding: 20px 15px
+      &:nth-child(2)
+        border-left: 1px solid rgba(0,0,0,0.1)
+        border-right: 1px solid rgba(0,0,0,0.1)
+      p
+        margin: 0
+        font-size: 18px
+        color: #666
+
+.default-color
+  color: #2cb5e8
